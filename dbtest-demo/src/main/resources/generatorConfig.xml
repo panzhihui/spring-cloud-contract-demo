@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--参数配置-->
+<!--    <properties resource="generator/generator.properties"/>-->
+    <!--驱动jar-->
+    <classPathEntry location="C:\Users\86152\.m2\repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar" />
+
+    <context id="context" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://192.168.14.129:3306/testdb?useUnicode=true"
+                        userId="root"
+                        password="Pzh@1234#">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.demo.dao.model" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!--<sqlMapGenerator targetPackage="com.demo.dao.mapper" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>-->
+
+        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="com.demo.dao.mapper" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <table tableName="person" domainObjectName="Person">
+        </table>
+
+    </context>
+</generatorConfiguration>

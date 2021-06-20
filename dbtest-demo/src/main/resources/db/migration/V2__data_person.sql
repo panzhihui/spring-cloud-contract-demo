@@ -1,0 +1,2 @@
+INSERT INTO testdb.person (id, name, age, address, mobile, height, weight, marital_status) VALUES ('60ade394-10d7-477d-8aa6-384f59a53ddg', 'PZH', 18, 'HOME HOME', '15215003060', 183, 55, 1);
+INSERT INTO testdb.person (id, name, age, address, mobile, height, weight, marital_status) VALUES ('98035b0a-ec07-44b8-8c51-d0cfe427476s', 'PZH', 18, 'HOME HOME', '15215003060', 183, 55, 1);

@@ -2,7 +2,7 @@ import org.junit.jupiter.api.*;
 
 @DisplayName("first class")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-//@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class FirstJupiterDemo {
     private int value = 3;
 
